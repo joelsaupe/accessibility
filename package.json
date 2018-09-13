@@ -10,11 +10,9 @@
     "start": "mdx-deck deck.mdx",
     "build": "yarn run build:site && yarn run build:pdf",
     "build:site": "mdx-deck build deck.mdx",
-    "build:pdf": "mdx-deck pdf deck.mdx",
-    "postbuild": "cpy --parents \"public/**\" ./dist"
+    "build:pdf": "mdx-deck pdf deck.mdx"
   },
   "devDependencies": {
-    "cpy-cli": "^2.0.0",
     "mdx-deck": "^1.7.3"
   },
   "dependencies": {}
