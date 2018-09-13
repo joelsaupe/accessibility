@@ -1,0 +1,310 @@
+import { Image, Head, Appear } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
+import NightDay from './layouts/NightDay'
+import Example from './layouts/Example'
+
+
+export { default as theme } from './theme'
+
+<Head>
+  <title>Accessibility: More than Just Screen Readers and ARIA</title>
+</Head>
+
+
+
+
+# Accessibility
+
+### *More than Just Screen Readers and ARIA*
+
+<br />
+<br />
+
+Joel Saupe
+
+[sau.pe/a11y](https://sau.pe/a11y)
+
+
+---
+
+
+# The Journey into Accessibility
+
+
+---
+
+
+# Learn the Types of Disabilities
+
+- Cognitive Impairments
+- Attention Deficit/Hyperactivity Disorder (ADHD)
+- Visual Impairments
+- Hearing Impairments
+- Physical/Mobility Impairments
+
+
+```notes
+  - Realize we have users with these problems, want to find help
+```
+
+
+---
+
+
+# Google The Acronyms
+
+- [WCAG](https://www.w3.org/TR/WCAG21/)
+- [WAI](https://www.w3.org/WAI/)
+- [ARIA](https://www.w3.org/TR/wai-aria/)
+- [a11y](https://en.wiktionary.org/wiki/a11y)
+
+
+```notes
+  - Find all the standards and guidelines
+  - Find them pretty intimidating and (ironically) unaccessible
+```
+
+
+---
+
+
+# Accessibility 101
+
+- [simply accessible.](https://simplyaccessible.com/)
+- [The A11Y Project](https://a11yproject.com/)
+- [Microsoft Inclusive Design](https://www.microsoft.com/design/inclusive/)
+
+
+```notes
+  - Find guides and tutorials that are less intimidating
+```
+
+
+---
+
+
+<Image src="./images/aria-all-the-things.jpg" size="contain" alt="All the things meme with caption 'Aria All the Things'" />
+
+```notes
+  - download color blind extension
+  - you found some javascript that will print out in the console what needs to be changed
+  - figure out how to sort of use a screen reader
+  - you start adding aria attributes to everything
+```
+
+---
+
+
+<a href="//simplyaccessible.com/article/danger-aria-tabs/" target="_blank">
+  <Image src="./images/danger-aria-tabs.png" size="contain" height="80vh" alt="Screenshot of article title called 'Danger! ARIA tabs'" />
+</a>
+
+```notes
+  - end up stumbling upon articles saying maybe that isn't really what's best for your users.
+```
+
+
+---
+
+
+<Image src="./images/wut.webp" size="contain" alt="Confused Nick Young Meme" />
+
+
+---
+
+
+# It Starts as a Design Problem
+
+```notes
+  - Go back to the drawing board
+  - Not everything can be solved with aria
+  - Screen readers aren't your only edge case
+```
+
+
+---
+
+
+> “Accessible design is good design – it benefits people who don’t have disabilities as well as people who do. Accessibility is all about removing barriers and providing the benefits of technology for everyone.”
+
+*Steve Ballmer*
+
+
+```notes
+  - The issue with aria all the things is accessibility, like design, is subjective.
+  - That's what makes it hard.
+  - As developers we like things to be clear cut and well defined
+  - We wish there was just a definitive guide to making our apps 100% accessible.
+```
+
+
+---
+
+
+<Image src="./images/mobile-first-development.svg" size="contain" height="80vh" alt="Mobile First Development" />
+
+
+```notes
+  - Mobile First
+```
+
+---
+
+
+<Image src="./images/accessibility-first-development.svg" size="contain" height="80vh" alt="Mobile First Development is a subset of Accessibility First Development" />
+
+
+---
+
+
+# What Even is Accessibility First Development?
+
+
+---
+
+
+# Accessibility === Usability
+
+---
+
+
+<Image src="./images/disabilities.png" size="contain" height="80vh" width="100vw" alt="Twitter Android client in day mode" />
+
+<a href="https://www.microsoft.com/design/inclusive/" target="_blank">
+  <h6>source: Microsoft Inclusive Design</h6>
+</a>
+
+
+```notes
+
+- The Persona Spectrum
+
+```
+
+
+---
+
+
+<Image src="./images/statistics.png" size="contain" height="80vh" width="100vw" alt="Twitter Android client in night mode" />
+
+<a href="https://www.microsoft.com/design/inclusive/" target="_blank">
+  <h6>source: Microsoft Inclusive Design</h6>
+</a>
+
+
+---
+
+
+# Examples
+
+
+---
+
+
+<Image src="./images/color-ratios.png" size="contain" width="80vw" height="80vh" alt="" />
+
+
+```notes
+Looks good inside the office on a 4k ultrawide monitor,
+not so good outside waiting for the bus to come by.
+```
+
+
+---
+
+export default Example
+
+
+<Image src="./images/color-ratios-mobile.png" size="contain" width="100vw" height="80vh" alt="" />
+
+---
+
+export default NightDay
+
+
+<Image src="./images/twitter-light.png" size="contain" height="80vh" width="100%" alt="Twitter Android client in day mode" />
+
+<Image src="./images/twitter-dark.png" size="contain" height="80vh" width="100%" alt="Twitter Android client in night mode" />
+
+
+---
+
+export default Example
+
+
+<Image src="./images/auto-captions.png" size="contain" height="80vh" width="60vw" alt="" />
+
+
+---
+
+export default Example
+
+
+<Image src="./images/boarding-pass.png" size="contain" height="80vh" width="100vw" alt="" />
+
+
+```notes
+ first could mimic dimmed lighting, joke about spending an entire hour figuring
+ out how to dim lighting on the screen at the conference, you wouldn't believe
+ how many filters I tried.x
+
+could do a slide on dried out contacts, so everything is blurry, eyes red (spongebob meme?)
+```
+
+
+---
+
+export default Example
+
+
+<Image src="./images/boarding-pass-loading.png" size="contain" height="80vh" width="100vw" alt="" />
+
+
+---
+
+
+<Image src="./images/tired.gif" size="contain" alt="" />
+
+
+---
+
+export default Example
+
+
+<Image src="./images/boarding-pass-dim.png" size="contain" height="80vh" width="100vw" alt="" />
+
+
+---
+
+
+# Negativity Bias
+
+People remember the <u>**bad**</u> more than the <u>**good**</u>
+
+
+---
+
+
+# Your app will never be 100% accessible
+
+
+---
+
+
+# and that's okay
+
+
+---
+
+
+<Image src="./images/god-entity.jpeg" size="contain" alt="When you do things right, people won't be sure you've done anything at all." />
+
+
+---
+
+# That's it
+
+<br />
+<br />
+
+[sau.pe/a11y](https://sau.pe/a11y)

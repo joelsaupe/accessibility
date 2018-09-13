@@ -1,0 +1,15 @@
+{
+  "name": "accessibility",
+  "version": "1.0.0",
+  "description": "Accessibility: More than ARIA and Screen Readers",
+  "main": "index.js",
+  "author": "Joel Saupe",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "devDependencies": {
+    "mdx-deck": "^1.7.3"
+  }
+}
