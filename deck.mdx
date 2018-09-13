@@ -8,6 +8,7 @@ export { default as theme } from './theme'
 
 <Head>
   <title>Accessibility: More than Just Screen Readers and ARIA</title>
+  <meta name='og:image' content='https://a11y.netlify.com/card.png' />
 </Head>
 
 
@@ -51,7 +52,7 @@ Joel Saupe
 ---
 
 
-# Google The Acronyms
+# The Acronyms
 
 - [WCAG](https://www.w3.org/TR/WCAG21/)
 - [WAI](https://www.w3.org/WAI/)
@@ -126,8 +127,8 @@ Joel Saupe
 
 
 > “Accessible design is good design – it benefits people who don’t have disabilities as well as people who do. Accessibility is all about removing barriers and providing the benefits of technology for everyone.”
-
-*Steve Ballmer*
+>
+> *Steve Ballmer*
 
 
 ```notes
@@ -141,11 +142,13 @@ Joel Saupe
 ---
 
 
-<Image src="public/images/mobile-first-development.svg" size="contain" height="80vh" alt="Mobile First Development" />
+<Image src="public/images/mobile-first-development.svg" size="contain" height="80vh" alt="Mobile First Design" />
 
 
 ```notes
-  - Mobile First
+  - Mobile First Design is and was an accessibility issue all along
+  - It's now nearly entirely expected
+  - How much better is the web because of it?
 ```
 
 ---
@@ -154,10 +157,23 @@ Joel Saupe
 <Image src="public/images/accessibility-first-development.svg" size="contain" height="80vh" alt="Mobile First Development is a subset of Accessibility First Development" />
 
 
+```notes
+  - Time for us to graduate
+  - Mobile First is accessibility first
+  - Since Mobile First is the norm, we can move on to bigger and better things
+```
+
+
 ---
 
 
 # What Even is Accessibility First Development?
+
+
+```notes
+  - Accessibility First Development means making accessibility a first class citizen
+  - Accessibility becomes a topic addressed with every feature/design change
+```
 
 
 ---
@@ -165,10 +181,16 @@ Joel Saupe
 
 # Accessibility === Usability
 
+
+```notes
+  - Making your app more accessible makes it more usable
+```
+
+
 ---
 
 
-<Image src="public/images/disabilities.png" size="contain" height="80vh" width="100vw" alt="Twitter Android client in day mode" />
+<Image src="public/images/disabilities.png" size="contain" height="80vh" width="100vw" alt="The Persona Spectrum from Microsoft Inclusive Design" />
 
 <a href="https://www.microsoft.com/design/inclusive/" target="_blank">
   <h6>source: Microsoft Inclusive Design</h6>
@@ -176,20 +198,25 @@ Joel Saupe
 
 
 ```notes
-
-- The Persona Spectrum
-
+- "The Persona Spectrum" by Microsoft Inclusive Design
+- We focus a lot on the left, and don't realize that the improvements we make can have a much larger impact
 ```
 
 
 ---
 
 
-<Image src="public/images/statistics.png" size="contain" height="80vh" width="100vw" alt="Twitter Android client in night mode" />
+<Image src="public/images/statistics.png" size="contain" height="80vh" width="100vw" alt="Disabilities Statistics: 26 thousand permanent, 13 million temporary, 8 million situational." />
 
 <a href="https://www.microsoft.com/design/inclusive/" target="_blank">
   <h6>source: Microsoft Inclusive Design</h6>
 </a>
+
+
+```notes
+  - Easier to get support from product managers
+  - We all face situational disabilities every day
+```
 
 
 ---
@@ -205,8 +232,8 @@ Joel Saupe
 
 
 ```notes
-Looks good inside the office on a 4k ultrawide monitor,
-not so good outside waiting for the bus to come by.
+  - Looks good inside the office on a 4k ultrawide monitor,
+  - Sometimes we develop in a bubble/utopia
 ```
 
 
@@ -216,6 +243,13 @@ export default Example
 
 
 <Image src="public/images/color-ratios-mobile.png" size="contain" width="100vw" height="80vh" alt="" />
+
+
+```notes
+  - Looks less good in the real world
+  - Develop for real world situations, not just based on your work equipment
+```
+
 
 ---
 
@@ -227,28 +261,38 @@ export default NightDay
 <Image src="public/images/twitter-dark.png" size="contain" height="80vh" width="100%" alt="Twitter Android client in night mode" />
 
 
+```notes
+  - Situational Lighting/Vision Issue
+  - App theme matches lighting situations
+  - Doesn't require thinking by user
+```
+
+
 ---
 
 export default Example
 
 
-<Image src="public/images/auto-captions.png" size="contain" height="80vh" width="60vw" alt="" />
-
-
----
-
-export default Example
-
-
-<Image src="public/images/boarding-pass.png" size="contain" height="80vh" width="100vw" alt="" />
+<Image src="public/images/auto-captions.png" size="contain" height="80vh" width="60vw" alt="YouTube mobile app with auto-generated subtitles" />
 
 
 ```notes
- first could mimic dimmed lighting, joke about spending an entire hour figuring
- out how to dim lighting on the screen at the conference, you wouldn't believe
- how many filters I tried.x
+  - Situational Hearing Issue
+  - Not always in a position to listen
+  - Automated, removing burden from creators and consumers
+```
 
-could do a slide on dried out contacts, so everything is blurry, eyes red (spongebob meme?)
+---
+
+export default Example
+
+
+<Image src="public/images/boarding-pass.png" size="contain" height="80vh" width="100vw" alt="United Airlines boarding pass under idea conditions" />
+
+
+```notes
+  - Air travel is stressful, focusing on accessibility can improve it for everyone
+  - Lots of other distractions and problems, app shouldn't be one of them
 ```
 
 
@@ -260,11 +304,21 @@ export default Example
 <Image src="public/images/boarding-pass-loading.png" size="contain" height="80vh" width="100vw" alt="" />
 
 
+```notes
+  - Situational Connectivity Issue
+  - Last thing you want is to get up to security and see a loading screen instead of your boarding pass
+```
+
+
 ---
 
 
 <Image src="public/images/tired.gif" size="contain" alt="" />
 
+
+```notes
+  - MFW my flight's canceled and I have to wait for the red eye
+```
 
 ---
 
@@ -274,12 +328,26 @@ export default Example
 <Image src="public/images/boarding-pass-dim.png" size="contain" height="80vh" width="100vw" alt="" />
 
 
+```notes
+  - Situational Lighting/Vision Issue
+  - User lighting settings aren't always ideal
+  - United Airlines app temporarily overrides lighting settings to improve contrast for reading boarding pass
+```
+
+
 ---
 
 
 # Negativity Bias
 
 People remember the <u>**bad**</u> more than the <u>**good**</u>
+
+
+```notes
+  - The little things make a big difference
+  - All these examples are things most users would never notice.
+  - The more we try to put ourselves in the shoes of our users, the easier it becomes to find these types of problems with our apps.
+```
 
 
 ---
@@ -294,10 +362,21 @@ People remember the <u>**bad**</u> more than the <u>**good**</u>
 # and that's okay
 
 
+```notes
+  - In the end it's subjective, we can get close, but will never be able to please everyone or meet everyone's needs
+  - But the more we try, the better it is for everyone
+```
+
+
 ---
 
 
 <Image src="public/images/god-entity.jpeg" size="contain" alt="When you do things right, people won't be sure you've done anything at all." />
+
+
+```notes
+  - Accessibility might not always be glamorous, but the end goal is to make life easier and reduce problems, even when they don't know they have a problem.
+```
 
 
 ---

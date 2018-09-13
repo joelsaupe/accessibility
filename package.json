@@ -8,9 +8,10 @@
   "private": false,
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "yarn run build:site && yarn run build:pdf",
+    "build": "yarn run build:site && yarn run build:pdf && yarn run build:thumbnail",
     "build:site": "mdx-deck build deck.mdx",
     "build:pdf": "mdx-deck pdf deck.mdx",
+    "build:thumbnail": "mdx-deck screenshot deck.mdx",
     "postbuild": "cpy --parents \"public/**\" ./dist"
   },
   "devDependencies": {
