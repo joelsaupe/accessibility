@@ -8,7 +8,7 @@ export default {
   colors: {
     text: '#7e57c2',
     background: '#fff',
-    link: '#666',
+    link: '#51387C',
   },
   blockquote: {
     fontSize: '1em',
